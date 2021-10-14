@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  mostrandoModal = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  mostrarModal(){
+    this.mostrandoModal = true;
+  }
+
+  esconderModal(){
+    this.mostrandoModal = false;
   }
 
 }
