@@ -8,6 +8,9 @@ import { MenuComponent } from './components/menu/menu.component';
 import { ListaDeContatosComponent } from './components/lista-de-contatos/lista-de-contatos.component';
 import { ContatoComponent } from './components/contato/contato.component';
 import { CreateContatoComponent } from './components/create-contato/create-contato.component';
+import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
+import { CadastroComponent } from './components/cadastro/cadastro.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { CreateContatoComponent } from './components/create-contato/create-conta
     MenuComponent,
     ListaDeContatosComponent,
     ContatoComponent,
-    CreateContatoComponent
+    CreateContatoComponent,
+    LoginComponent,
+    HomeComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
