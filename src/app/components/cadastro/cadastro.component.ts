@@ -17,4 +17,8 @@ export class CadastroComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  cadastrar(): void {
+    console.log(this.nome, this.email);
+  }
+
 }
