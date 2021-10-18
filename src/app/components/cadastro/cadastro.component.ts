@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
 
 interface response {
@@ -18,7 +19,10 @@ export class CadastroComponent implements OnInit {
   senha = '';
   conf = '';
 
-  constructor(private servico: AuthService) { }
+  constructor(
+    private servico: AuthService,
+    private router: Router
+    ) {}
 
   ngOnInit(): void {
   }
