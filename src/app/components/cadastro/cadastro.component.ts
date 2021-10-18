@@ -13,13 +13,13 @@ export class CadastroComponent implements OnInit {
   senha = '';
   conf = '';
 
-  constructor(private authServico: AuthService) { }
+  constructor(private servico: AuthService) { }
 
   ngOnInit(): void {
   }
 
   cadastrar(): void {
-    console.log(this.nome, this.email);
+    this.servico.cadastrar(this.nome, this.email, this.senha);
   }
 
 }
