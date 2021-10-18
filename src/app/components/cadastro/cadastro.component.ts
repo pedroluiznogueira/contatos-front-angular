@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-cadastro',
@@ -12,7 +13,7 @@ export class CadastroComponent implements OnInit {
   senha = '';
   conf = '';
 
-  constructor() { }
+  constructor(private authServico: AuthService) { }
 
   ngOnInit(): void {
   }
