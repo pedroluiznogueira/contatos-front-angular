@@ -13,14 +13,6 @@ export class AuthService {
 
   cadastrar(nome: string, email: string, senha: string) {
     let u = {nome, email, senha}
-    this.http.post(`${this.url}registrar`, u)
-                  .subscribe(
-                    {
-                      next: data => console.log(data),
-                      error: err => console.log(err),
-                      complete: () => console.log("O observavel já não tem mais o que ser observado")
-                    }
-                  );
+    return this.http.post(`${this.url}registrar`, u);
   }
-
 }
