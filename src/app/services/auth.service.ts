@@ -13,6 +13,6 @@ export class AuthService {
 
   cadastrar(nome: string, email: string, senha: string) {
     let u = {nome, email, senha}
-    return this.http.post(`${this.url}registrar`, u);
+    return this.http.post(`${this.url}/registrar`, u);
   }
 }
