@@ -7,13 +7,13 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
-  data?: Object;
+  private readonly url?: string = "http://contatos-nodb.herokuapp.com/registrar";
 
   constructor(private http: HttpClient) { }
 
   cadastrar(nome: string, email: string, senha: string) {
     let u = {nome, email, senha}
-    this.http.post("http://contatos-nodb.herokuapp.com/registrar", u)
+    this.http.post(`${this.url}registrar`, u)
                   .subscribe(
                     {
                       next: data => console.log(data),
